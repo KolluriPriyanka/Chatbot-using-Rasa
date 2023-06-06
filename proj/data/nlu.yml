@@ -1,0 +1,850 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: thanks
+  examples: |
+    - thank you
+    - thanks
+    - thank you so much
+    - thanks a lot
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: respiratory_infections_precautions
+  examples: |
+    - what precautions should I take if I have respiratory infections?
+    - precautions for respiratory infections?
+    - respiratory infections precautions?
+    - how to save myself from respiratory infections?
+    - how to keep ourselves safe from respiratory infections?
+
+- intent: respiratory_infections_medical_professionals
+  examples: |
+    - which medical professionals should I consult if I have respiratory infections?
+    - which professionals should I consult if I have respiratory infections?
+    - medical professionals for respiratory infections?
+    - respiratory infections medical professionals?
+
+- intent: respiratory_infections_medicine_availabilty
+  examples: |
+    - which medicines should I take if I have respiratory infections?
+    - which medicines should I have if I have respiratory infections?
+    - medicines for respiratory infections?
+    - respiratory infections medicines?
+
+- intent: respiratory_infections_basic_amenities
+  examples: |
+    - which basic amenities should I take if I have respiratory infections?
+    - which baisc amenities should I have if I have respiratory infections?
+    - basic amenities for respiratory infections?
+    - respiratory infections basic amenities?
+
+- intent: respiratory_infections_symptoms
+  examples: |
+    - What are the symptoms of respiratory infections?
+    - How can I identify if I have respiratory infections?
+    - What are the common signs of respiratory infections?
+    - What should I look out for if I suspect respiratory infections?
+    - What causes respiratory infections?
+    - Are there specific risk factors for respiratory infections?
+    - Can certain medications or diseases lead to respiratory infections?
+    - Are there lifestyle factors that can contribute to respiratory infections?
+    - respiratory infections
+
+- intent: respiratory_infections_dietary_recommendation
+  examples: |
+    - Are there specific dietary restrictions for respiratory infections patients?
+    - Are there any recommended foods or dietary habits for respiratory infections?
+    - How can I maintain a healthy diet while managing respiratory infections?
+    - What diet should I take if I have respiratory infections?
+    - Diet for respiratory infections
+    - Respiratory infections diet
+
+- intent: respiratory_infections_treatment_options
+  examples: |
+    - What are the treatment options for respiratory infections?
+    - How is respiratory infection managed?
+    - Are there any medications available for respiratory infections?
+    - What lifestyle changes can help with respiratory infections management?
+
+- intent: diarrheal_diseases_precautions
+  examples: |
+    - what precautions should I take if I have diarrheal diseases?
+    - precautions for diarrheal diseases?
+    - diarrheal diseases precautions?
+    - how to save myself from diarrheal diseases?
+    - how to keep ourselves safe from diarrheal diseases?
+
+- intent: diarrheal_diseases_medical_professionals
+  examples: |
+    - which medical professionals should I consult if I have diarrheal diseases?
+    - which professionals should I consult if I have diarrheal diseases?
+    - medical professionals for diarrheal diseases?
+    - diarrheal diseases medical professionals?
+
+- intent: diarrheal_diseases_medicine_availabilty
+  examples: |
+    - which medicines should I take if I have diarrheal diseases?
+    - which medicines should I have if I have diarrheal diseases?
+    - medicines for diarrheal diseases?
+    - diarrheal diseases medicines?
+
+- intent: diarrheal_diseases_basic_amenities
+  examples: |
+    - which basic amenities should I take if I have diarrheal diseases?
+    - which baisc amenities should I have if I have diarrheal diseases?
+    - basic amenities for diarrheal diseases?
+    - diarrheal diseases basic amenities?
+
+- intent: diarrheal_diseases_symptoms
+  examples: |
+    - What are the symptoms of diarrheal diseases?
+    - How can I identify if I have diarrheal diseases?
+    - What are the common signs of diarrheal diseases?
+    - What should I look out for if I suspect diarrheal diseases?
+    - What causes diarrheal diseases?
+    - Are there specific risk factors for diarrheal diseases?
+    - Can certain medications or diseases lead to diarrheal diseases?
+    - Are there lifestyle factors that can contribute to diarrheal diseases?
+    - diarrheal diseases
+
+- intent: diarrheal_diseases_dietary_recommendation
+  examples: |
+    - Are there specific dietary restrictions for diarrheal diseases patients?
+    - Are there any recommended foods or dietary habits for diarrheal diseases?
+    - How can I maintain a healthy diet while managing diarrheal diseases?
+    - What diet should I take if I have diarrheal diseases?
+    - Diet for diarrheal diseases
+    - diarrheal diseases diet
+
+- intent: diarrheal_diseases_treatment_options
+  examples: |
+    - What are the treatment options for diarrheal diseases?
+    - How are diarrheal diseases managed?
+    - Are there any medications available for diarrheal diseases?
+    - What lifestyle changes can help with diarrheal diseases management?
+
+- intent: dengue_precautions
+  examples: |
+    - what precautions should I take if I have dengue?
+    - precautions for dengue?
+    - dengue precautions?
+    - how to save myself from dengue?
+    - how to keep ourselves safe from dengue?
+
+- intent: dengue_medical_professionals
+  examples: |
+    - which medical professionals should I consult if I have dengue?
+    - which professionals should I consult if I have dengue?
+    - medical professionals for dengue?
+    - dengue medical professionals?
+
+- intent: dengue_medicine_availabilty
+  examples: |
+    - which medicines should I take if I have dengue?
+    - which medicines should I have if I have dengue?
+    - medicines for dengue?
+    - dengue medicines?
+
+- intent: dengue_basic_amenities
+  examples: |
+    - which basic amenities should I take if I have dengue?
+    - which baisc amenities should I have if I have dengue?
+    - basic amenities for dengue?
+    - dengue basic amenities?
+
+- intent: dengue_symptoms
+  examples: |
+    - What are the symptoms of dengue?
+    - How can I identify if I have dengue?
+    - What are the common signs of dengue?
+    - What should I look out for if I suspect dengue?
+    - What causes dengue?
+    - Are there specific risk factors for dengue?
+    - Can certain medications or diseases lead to dengue?
+    - Are there lifestyle factors that can contribute to dengue?
+    - dengue
+
+- intent: dengue_dietary_recommendation
+  examples: |
+    - Are there specific dietary restrictions for dengue patients?
+    - Are there any recommended foods or dietary habits for dengue?
+    - How can I maintain a healthy diet while managing dengue?
+    - What diet should I take if I have dengue?
+    - Diet for dengue
+    - dengue diet
+
+- intent: dengue_treatment_options
+  examples: |
+    - What are the treatment options for dengue?
+    - How is dengue managed?
+    - Are there any medications available for dengue?
+    - What lifestyle changes can help with dengue management?
+
+- intent: malaria_precautions
+  examples: |
+    - what precautions should I take if I have malaria?
+    - precautions for malaria?
+    - malaria precautions?
+    - how to save myself from malaria?
+    - how to keep ourselves safe from malaria?
+
+- intent: malaria_medical_professionals
+  examples: |
+    - which medical professionals should I consult if I have malaria?
+    - which professionals should I consult if I have malaria?
+    - medical professionals for malaria?
+    - malaria medical professionals?
+
+- intent: malaria_medicine_availabilty
+  examples: |
+    - which medicines should I take if I have malaria?
+    - which medicines should I have if I have malaria?
+    - medicines for malaria?
+    - malaria medicines?
+
+- intent: malaria_basic_amenities
+  examples: |
+    - which basic amenities should I take if I have malaria?
+    - which baisc amenities should I have if I have malaria?
+    - basic amenities for malaria?
+    - malaria basic amenities?
+
+- intent: malaria_symptoms
+  examples: |
+    - What are the symptoms of malaria?
+    - How can I identify if I have malaria?
+    - What are the common signs of malaria?
+    - What should I look out for if I suspect malaria?
+    - What causes malaria?
+    - Are there specific risk factors for malaria?
+    - Can certain medications or diseases lead to malaria?
+    - Are there lifestyle factors that can contribute to malaria?
+    - malaria
+
+- intent: malaria_dietary_recommendation
+  examples: |
+    - Are there specific dietary restrictions for malaria patients?
+    - What foods should I avoid if I have malaria?
+    - Are there any recommended foods or dietary habits for malaria?
+    - How can I maintain a healthy diet while managing malaria?
+    - What diet should I take if I have malaria?
+    - Diet for malaria
+    - malaria diet
+
+- intent: malaria_treatment_options
+  examples: |
+    - What are the treatment options for malaria?
+    - How is malaria managed?
+    - Are there any medications available for malaria?
+    - What lifestyle changes can help with malaria management?
+
+- intent: tuberculosis_precautions
+  examples: |
+    - what precautions should I take if I have tuberculosis?
+    - precautions for tuberculosis?
+    - tuberculosis precautions?
+    - how to save myself from tuberculosis?
+    - how to keep ourselves safe from tuberculosis?
+    - what precautions should I take if I have tb?
+    - precautions for tb?
+    - tb precautions?
+    - how to save myself from tb?
+    - how to keep ourselves safe from tb?
+
+- intent: tuberculosis_medical_professionals
+  examples: |
+    - which medical professionals should I consult if I have tuberculosis?
+    - which professionals should I consult if I have tuberculosis?
+    - medical professionals for tuberculosis?
+    - tuberculosis medical professionals?
+    - which medical professionals should I consult if I have tb?
+    - which professionals should I consult if I have tb?
+    - medical professionals for tb?
+    - tb medical professionals?
+
+- intent: tuberculosis_medicine_availabilty
+  examples: |
+    - which medicines should I take if I have tuberculosis?
+    - which medicines should I have if I have tuberculosis?
+    - medicines for tuberculosis?
+    - tuberculosis medicines?
+    - which medicines should I take if I have tb?
+    - which medicines should I have if I have tb?
+    - medicines for tb?
+    - tb medicines?
+
+- intent: tuberculosis_basic_amenities
+  examples: |
+    - which basic amenities should I take if I have tuberculosis?
+    - which baisc amenities should I have if I have tuberculosis?
+    - basic amenities for tuberculosis?
+    - tuberculosis basic amenities?
+    - which basic amenities should I take if I have tb?
+    - which baisc amenities should I have if I have tb?
+    - basic amenities for tb?
+    - tb basic amenities?
+
+- intent: tuberculosis_symptoms
+  examples: |
+    - What are the symptoms of tuberculosis?
+    - How can I identify if I have tuberculosis?
+    - What are the common signs of tuberculosis?
+    - What should I look out for if I suspect tuberculosis?
+    - What causes tuberculosis?
+    - Are there specific risk factors for tuberculosis?
+    - Can certain medications or diseases lead to tuberculosis?
+    - Are there lifestyle factors that can contribute to tuberculosis?
+    - tuberculosis
+    - What are the symptoms of tb?
+    - How can I identify if I have tb?
+    - What are the common signs of tb?
+    - What should I look out for if I suspect tb?
+    - What causes tb?
+    - Are there specific risk factors for tb?
+    - Can certain medications or diseases lead to tb?
+    - Are there lifestyle factors that can contribute to tb?
+    - tb
+
+- intent: tuberculosis_dietary_recommendation
+  examples: |
+    - Are there specific dietary restrictions for tuberculosis patients?
+    - What foods should I avoid if I have tuberculosis?
+    - Are there any recommended foods or dietary habits for tuberculosis?
+    - How can I maintain a healthy diet while managing tuberculosis?
+    - Are there specific dietary restrictions for tb patients?
+    - What foods should I avoid if I have tb?
+    - Are there any recommended foods or dietary habits for tb?
+    - How can I maintain a healthy diet while managing tb?
+    - What diet should I take if I have tuberculosis?
+    - Diet for tuberculosis
+    - tuberculosis
+    - What diet should I take if I have tb?
+    - Diet for tb
+    - tb diet
+    
+- intent: tuberculosis_treatment_options
+  examples: |
+    - What are the treatment options for tuberculosis?
+    - How is tuberculosis managed?
+    - Are there any medications available for tuberculosis?
+    - What lifestyle changes can help with tuberculosis management?
+    - What are the treatment options for tb?
+    - How is tb managed?
+    - Are there any medications available for tb?
+    - What lifestyle changes can help with tb management?
+
+- intent: typhoid_precautions
+  examples: |
+    - what precautions should I take if I have typhoid?
+    - precautions for typhoid?
+    - typhoid precautions?
+    - how to save myself from typhoid?
+    - how to keep ourselves safe from typhoid?
+
+- intent: typhoid_medical_professionals
+  examples: |
+    - which medical professionals should I consult if I have typhoid?
+    - which professionals should I consult if I have typhoid?
+    - medical professionals for typhoid?
+    - typhoid medical professionals?
+
+- intent: typhoid_medicine_availabilty
+  examples: |
+    - which medicines should I take if I have typhoid?
+    - which medicines should I have if I have typhoid?
+    - medicines for typhoid?
+    - typhoid medicines?
+
+- intent: typhoid_basic_amenities
+  examples: |
+    - which basic amenities should I take if I have typhoid?
+    - which baisc amenities should I have if I have typhoid?
+    - basic amenities for typhoid?
+    - typhoid basic amenities?
+
+- intent: typhoid_symptoms
+  examples: |
+    - What are the symptoms of typhoid?
+    - How can I identify if I have typhoid?
+    - What are the common signs of typhoid?
+    - What should I look out for if I suspect typhoid?
+    - What causes typhoid?
+    - Are there specific risk factors for typhoid?
+    - Can certain medications or diseases lead to typhoid?
+    - Are there lifestyle factors that can contribute to typhoid?
+    - typhoid
+
+- intent: typhoid_dietary_recommendation
+  examples: |
+    - Are there specific dietary restrictions for typhoid patients?
+    - What foods should I avoid if I have typhoid?
+    - Are there any recommended foods or dietary habits for typhoid?
+    - How can I maintain a healthy diet while managing typhoid?
+    - What diet should I take if I have typhoid?
+    - Diet for typhoid
+    - typhoid diet
+
+- intent: typhoid_treatment_options
+  examples: |
+    - What are the treatment options for typhoid?
+    - How is typhoid managed?
+    - Are there any medications available for typhoid?
+    - What lifestyle changes can help with typhoid management?
+
+############################################################################################################
+- intent: COPD_symptoms
+  examples: |
+    - What are the symptoms of COPD?
+    - What are the signs of COPD?
+    - How does COPD manifest in the body?
+    - What should I look out for if I suspect COPD?
+    - Chronic Obstructive Pulmonary Disease 
+    - COPD
+
+- intent:  COPD_causes_and_risk_factors
+  examples: |
+    - What causes COPD?
+    - Are there specific risk factors for COPD?
+    - Can smoking lead to COPD?
+    - Is exposure to environmental pollutants a risk factor for COPD?
+ 
+- intent: COPD_treatment_options
+  examples: |
+    - What are the precautionary Measures of COPD?
+    - What are the treatment options for COPD?
+    - How is COPD managed?
+    - Are there any medications available for COPD?
+    - What lifestyle changes can help with COPD management?
+
+- intent: COPD_diet
+  examples: |
+    - What should I include in my COPD diet?
+    - Are there specific foods I should focus on or avoid with COPD?
+    - Can you provide a list of COPD-friendly foods?
+    - What diet should I take if I have COPD?
+    - Diet for COPD
+    - COPD diet
+    - What diet should I take if I have Chronic Obstructive Pulmonary Disease?
+    - Diet for Chronic Obstructive Pulmonary Disease
+    - Chronic Obstructive Pulmonary Disease diet
+
+- intent: COPD_precautionary_measures
+  examples: |
+    - What are the precautionary measures to manage COPD and prevent exacerbations?
+    - Can you provide information on lifestyle changes, such as avoiding smoking and exposure to pollutants?
+    - Are there any specific precautions to take during cold weather or respiratory infections?
+
+- intent: COPD_medical_professional
+  examples: |
+    - Which medical professionals should I consult for COPD?
+    - Can you recommend a pulmonologist or respiratory specialist for COPD management?
+    - Are there any other healthcare providers, such as respiratory therapists, who can assist in COPD treatment?
+
+    
+- intent: COPD_medicine_available
+  examples: |
+    - What are the commonly prescribed medications for COPD management?
+    - Can you provide information on bronchodilators, inhaled corticosteroids, or other respiratory medications used for COPD?
+    - Are there any specific over-the-counter medications or supplements that can help with COPD symptoms?
+
+- intent: COPD_amenities
+  examples: |
+    - What are the necessary amenities or equipment for managing COPD at home?
+    - Can you provide information on oxygen concentrators, nebulizers, or other respiratory devices?
+    - Are there any specific accessibility or mobility aids that can assist individuals with COPD?
+
+
+
+
+############################################################################################################
+
+
+- intent: Jaundice_symptoms
+  examples: |
+    - What are the symptoms of jaundice?
+    - How can I identify if I have jaundice?
+    - What are the common signs of jaundice?
+    - What should I look out for if I suspect jaundice?
+    - What causes jaundice?
+    - Are there specific risk factors for jaundice?
+    - Can certain medications or diseases lead to jaundice?
+    - Are there lifestyle factors that can contribute to jaundice?
+    - jaundice
+
+- intent: Jaundice_treatment_options
+  examples: |
+    - What are the treatment options for jaundice?
+    - How is jaundice managed?
+    - Are there any medications available for jaundice?
+    - What lifestyle changes can help with jaundice management?
+    - medications for jaundice
+    - Medical Professionals	for jaundice
+
+- intent: dietary_recommendation_for_jaundice
+  examples: |
+    - Are there specific dietary restrictions for jaundice patients?
+    - What foods should I avoid if I have jaundice?
+    - Are there any recommended foods or dietary habits for jaundice?
+    - How can I maintain a healthy diet while managing jaundice?
+    - What diet should I take if I have jaundice?
+    - Diet for jaundice
+    - jaundice diet
+
+- intent: jaundice_precautionary_measures
+  examples: |
+    - What are the precautionary measures to manage jaundice and support liver health?
+    - Can you provide information on dietary restrictions, such as avoiding alcohol and fatty foods?
+    - Are there any specific precautions to take regarding medication use or exposure to toxins?
+
+- intent: jaundice_medical_professional
+  examples: |
+    - Which medical professionals should I consult for jaundice?
+    - Can you recommend a hepatologist or gastroenterologist for jaundice evaluation and treatment?
+    - Are there any other healthcare providers, such as dietitians or hepatobiliary surgeons, who can assist in jaundice management?
+
+    
+- intent: jaundice_medicine_available
+  examples: |
+    - What are the medications commonly used for jaundice treatment?
+    - Can you provide information on medications that support liver function or promote bilirubin excretion?
+    - Are there any specific herbal or alternative remedies that are used for jaundice management?
+
+- intent: jaundice_amenities
+  examples: |
+    - What are the necessary amenities or equipment for managing jaundice at home?
+    - Can you provide information on bilirubin level monitoring devices or light therapy equipment?
+    - Are there any specific dietary or nutritional recommendations for individuals with jaundice?
+
+
+
+
+############################################################################################################
+
+
+- intent: Kidney_stones_symptons
+  examples: |
+    - stones
+    - stone
+    - kidney stone
+    - What are the symptoms of kidney stones?
+    - How can I identify if I have kidney stones?
+    - What are the common signs of kidney stones?
+    - What should I look out for if I suspect kidney stones?
+
+- intent: kidney_stone_treatment_options
+  examples: |
+    - What are the treatment options for kidney stones?
+    - How are kidney stones managed?
+    - Are there any medications available for treating kidney stones?
+    - What are the surgical or non-surgical procedures used to remove kidney stones?
+    - medications for kidney stone
+    - medications for stone
+    - Medical Professionals	for kidney stone
+    - how to overcome kidney stone
+
+- intent: kidney_stone_diet
+  examples: |
+    - What should I include in my diet to prevent kidney stones?
+    - Are there specific foods I should focus on or avoid with kidney stones?
+    - Can you provide a list of kidney stone-friendly foods?
+    - What diet should I take if I have kidney stone?
+    - Diet for kidney stone
+    - kidney stone diet
+
+- intent: kidney_stone_precautionary_measures
+  examples: |
+    - What are the precautionary measures to manage kidney stones and prevent recurrence?
+    - Can you provide information on dietary modifications, such as increasing fluid intake and reducing sodium?
+    - Are there any specific precautions to take regarding certain medications or dietary supplements?
+
+- intent: kidney_stone_medical_professional
+  examples: |
+    - Which medical professionals should I consult for kidney stones?
+    - Can you recommend a urologist or nephrologist for kidney stone evaluation and treatment?
+    - Are there any other healthcare providers, such as dietitians or interventional radiologists, who can assist in kidney stone management?
+
+    
+- intent: kidney_stone_medicine_available
+  examples: |
+    - What are the commonly prescribed medications for kidney stone management?
+    - Can you provide information on medications that help in pain relief or assist in breaking down or passing kidney stones?
+    - Are there any specific over-the-counter medications or natural supplements that can be used for kidney stone treatment?
+
+- intent: kidney_stone_amenities
+  examples: |
+    - What are the necessary amenities or equipment for managing kidney stones at home?
+    - Can you provide information on kidney stone strainers, urinary catheters, or other related supplies?
+    - Are there any specific dietary or fluid intake recommendations for individuals with kidney stones?
+############################################################################################################
+
+
+
+- intent: depression_symptoms
+  examples: |
+    - depression
+    - What are the symptoms of depression?
+    - How can I identify if I have depression?
+    - What are the common signs of depression?
+    - What should I look out for if I suspect depression?
+    - What causes depression?
+    - Are there specific risk factors for developing depression?
+    - Can certain life events or circumstances contribute to depression?
+    - Are there genetic factors associated with depression?
+
+- intent: depression_precautionary_meaures
+  examples: |
+    - what are the precautionary_meaures of depression?
+    - how to handle depression?
+    - how to deal with depression?
+    - how to overcome depression?
+    - What are some self-care practices that can help manage depression?
+    - Are there any lifestyle changes or activities that may alleviate depressive symptoms?
+    - Can you provide tips for maintaining a healthy routine and promoting mental well-being?
+    - How can I create a supportive environment to aid in my recovery from depression?
+
+- intent: depression_medical_professionals
+  examples: |
+    - to whom to contact for overcoming depression?
+    - professionals for depression who can help
+    - What are the commonly prescribed medications for depression?
+    - Are these medications easily accessible and available?
+    - Do I need a prescription to obtain antidepressant medications?
+    - Can you provide information on any alternative or complementary therapies for depression?
+
+- intent: depression_medicine_availability
+  examples: |
+    - What are the commonly prescribed medications for depression?
+    - Are these medications easily accessible and available?
+    - Do I need a prescription to obtain antidepressant medications?
+    - Can you provide information on any alternative or complementary therapies for depression?
+
+- intent: depression_basic_amenities
+  examples: |
+    - Are there support groups or online communities for people with depression?
+    - What are some organizations or helplines that offer assistance for individuals with depression?
+    - Can you provide information on mental health resources in my local area?
+
+
+- intent: depression_diet
+  examples: |
+    - What foods should I include in my diet to support my mental health?
+    - Are there specific nutrients or vitamins that can help with depression?
+    - Can you provide a list of mood-boosting foods or a depression-friendly diet plan?
+    - What diet should I take if I have depression?
+    - Diet for depression
+    - depression diet
+
+- intent: depression_treatment_option
+  examples: |
+    - What are the available treatment options for depression?
+    - Can you explain different types of therapies, such as cognitive-behavioral therapy (CBT) or medication?
+    - Are there any alternative or complementary treatments that can be effective for managing depression?
+
+############################################################################################################
+
+
+
+- intent: Skin_infections_symptoms
+  examples: |
+    - skin infection symptoms
+    - what are the symptoms of skin infections?
+    - skin infections
+    - what causes skin infection?
+    - what are the common signs of skin infection?
+
+- intent: Skin_infections_precautionary_meaures
+  examples: |
+    - what are the precautionary_meaures of skin infection?
+    - how to handle skin infection?
+    - how to deal with skin infection?
+    - how to overcome skin infection?
+    - What are some self-care practices that can help manage skin infection?
+
+- intent: Skin_infections_medical_professionals
+  examples: |
+    - What type of healthcare professional should I consult for a skin infection?
+    - How can I find a dermatologist or skin specialist in my area?
+    - Are there any specific qualifications or credentials I should look for in a healthcare professional treating skin infections?
+    - Can you provide information on local clinics or hospitals that specialize in skin infections?
+    - Are there any telemedicine options available for consulting with a healthcare professional about a skin infection?
+
+- intent: Skin_infections_medicine_availability
+  examples: |
+    - What over-the-counter medications are available for treating common skin infections?
+    - Do I need a prescription for medications to treat a skin infection?
+    - Can you provide information on the availability of specific topical creams or ointments for skin infections?
+    - Are there any specific pharmacies or drugstores where I can find the prescribed medications for a skin infection?
+    - Are there any alternative or natural remedies for managing a skin infection?
+
+- intent: Skin_infections_basic_amenities
+  examples: |
+    - Are there any specific bathing or showering routines recommended for a person with a skin infection?
+    - What types of clothing or fabrics should I avoid wearing if I have a skin infection?
+    - Are there any dietary considerations or restrictions I should follow when dealing with a skin infection?
+    - Can you provide information on local support groups or communities for individuals with skin infections?
+    - Are there any government programs or initiatives that offer assistance or resources for individuals with skin infections?
+
+- intent: Skin_infection_diet
+  examples: |
+    - What foods should I include in my diet to support skin health during an infection?
+    - Are there specific nutrients or vitamins that can help in the healing process of a skin infection?
+    - Can you provide a list of skin-healthy foods or a diet plan to promote skin healing?
+    - What diet should I take if I have skin infection?
+    - Diet for skin infection
+    - skin infection diet
+
+- intent: Skin_infection_treatment_option
+  examples: |
+    - What are the available treatment options for a skin infection?
+    - Can you explain different types of topical creams, ointments, or antibiotics used for treating skin infections?
+    - Are there any home remedies or natural remedies that can help with a skin infection?
+
+############################################################################################################
+
+
+
+- intent: Eye_infections_symptoms
+  examples: |
+    - What are the common symptoms of an eye infection
+    - How can I recognize if I have an eye infection?
+    - What are the signs that indicate I might be suffering from an eye infection?
+    - Are there specific symptoms that differentiate between different types of eye infections?
+    - Can you provide information on the typical progression of symptoms in an eye infection?
+    - eye infection
+
+
+- intent: Eye_infections_precautionary_meaures
+  examples: |
+    - What precautions should I take to prevent the spread of an eye infection?
+    - How can I keep my eyes clean and reduce irritation during an eye infection?
+    - Are there any specific hygiene practices I should follow to manage an eye infection?
+    - What can I do to alleviate discomfort or redness caused by an eye infection?
+    -  Are there any lifestyle changes or habits I should avoid to promote healing of an eye infection?
+
+- intent: Eye_infections_medical_professionals
+  examples: |
+    - Which type of healthcare professional should I consult for a eye infection?
+    - Are there any specific qualifications or credentials I should look for in a healthcare professional treating eye infections?
+    - Can you provide information on local clinics or hospitals that specialize in eye infections?
+    - Are telemedicine or online consultations available for seeking advice on a eye infection?
+
+- intent: Eye_infections_medicine_availability
+  examples: |
+    - Do I need a prescription for medications to treat a EYE infection?
+    - Can you provide information on the availability of specific prescribed medications for a eye infection?
+    - Where can I find a pharmacy or drugstore that stocks the medications I need for a eye infection?
+    - Are there any alternative or natural remedies that can help alleviate symptoms of a eye infection?
+
+
+- intent: Eye_infections_basic_amenities
+  examples: |
+    - Query: What precautions should I take to ensure proper eye hygiene during an eye infection?
+    - Are there any specific eye care products or solutions I should use during an eye infection?
+    - Can you provide information on dietary recommendations or restrictions for individuals with an eye infection?
+    - Are there any local support groups or communities for individuals with eye infections?
+    - Are there any government programs or initiatives that offer assistance or resources for individuals with eye infections?
+
+- intent: Eye_infection_diet
+  examples: |
+    - What foods should I include in my diet to support eye health during an infection?
+    - Are there specific nutrients or vitamins that can help in the recovery of an eye infection?
+    - Can you provide a list of eye-healthy foods or a diet plan to promote healing?
+    - What diet should I take if I have eye infection?
+    - Diet for eye infection
+    - eye infection diet
+
+- intent: Eye_infection_treatment_option
+  examples: |
+    - What are the available treatment options for an eye infection?
+    - Can you explain different types of eye medications or ointments used for treating eye infections?
+    - Are there any home remedies or natural remedies that can help with an eye infection?
+
+############################################################################################################

@@ -1,0 +1,472 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - thanks
+  - bot_challenge
+  - respiratory_infections_precautions
+  - respiratory_infections_medical_professionals 
+  - respiratory_infections_medicine_availabilty
+  - respiratory_infections_basic_amenities
+  - respiratory_infections_symptoms
+  - respiratory_infections_dietary_recommendation
+  - respiratory_infections_treatment_options
+  - diarrheal_diseases_precautions
+  - diarrheal_diseases_medical_professionals
+  - diarrheal_diseases_medicine_availabilty
+  - diarrheal_diseases_basic_amenities
+  - diarrheal_diseases_symptoms
+  - diarrheal_diseases_dietary_recommendation
+  - diarrheal_diseases_treatment_options
+  - dengue_precautions
+  - dengue_medical_professionals
+  - dengue_medicine_availabilty
+  - dengue_basic_amenities
+  - dengue_symptoms
+  - dengue_dietary_recommendation
+  - dengue_treatment_options
+  - malaria_precautions
+  - malaria_medical_professionals
+  - malaria_medicine_availabilty
+  - malaria_basic_amenities
+  - malaria_symptoms
+  - malaria_dietary_recommendation
+  - malaria_treatment_options
+  - tuberculosis_precautions
+  - tuberculosis_medical_professionals
+  - tuberculosis_medicine_availabilty
+  - tuberculosis_basic_amenities
+  - tuberculosis_symptoms
+  - tuberculosis_dietary_recommendation
+  - tuberculosis_treatment_options
+  - typhoid_precautions
+  - typhoid_medical_professionals
+  - typhoid_medicine_availabilty
+  - typhoid_basic_amenities
+  - typhoid_symptoms
+  - typhoid_dietary_recommendation
+  - typhoid_treatment_options
+  - COPD_symptoms
+  - COPD_causes_and_risk_factors
+  - COPD_treatment_options
+  - COPD_diet
+  - COPD_precautionary_measures
+  - COPD_medical_professional
+  - COPD_medicine_available
+  - COPD_amenities
+  - Jaundice_symptoms
+  - Jaundice_treatment_options
+  - dietary_recommendation_for_jaundice
+  - jaundice_precautionary_measures
+  - jaundice_medical_professional
+  - jaundice_medicine_available
+  - jaundice_amenities
+  - Kidney_stones_symptons
+  - kidney_stone_treatment_options
+  - kidney_stone_diet
+  - kidney_stone_precautionary_measures
+  - kidney_stone_medical_professional
+  - kidney_stone_medicine_available
+  - kidney_stone_amenities
+  - depression_symptoms
+  - depression_precautionary_meaures
+  - depression_medical_professionals
+  - depression_medicine_availability
+  - depression_basic_amenities
+  - depression_diet
+  - depression_treatment_option
+  - Skin_infections_symptoms
+  - Skin_infections_precautionary_meaures
+  - Skin_infections_medical_professionals
+  - Skin_infections_medicine_availability
+  - Skin_infections_basic_amenities
+  - Skin_infection_diet
+  - Skin_infection_treatment_option
+  - Eye_infections_symptoms
+  - Eye_infections_precautionary_meaures
+  - Eye_infections_medical_professionals
+  - Eye_infections_medicine_availability
+  - Eye_infections_basic_amenities
+  - Eye_infection_diet
+  - Eye_infection_treatment_option
+  
+
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+  
+  utter_thanks:
+  - text: "I hope I was able to help you with the info you needed. Don't hesitate to contact our team for further info xyzmedical@gmail.com"
+  
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+  utter_respiratory_infections_precautions:
+  - text: "Practice good respiratory hygiene, wash hands frequently, maintain good ventilation, avoid close contact with individuals who have respiratory symptoms"
+
+  utter_respiratory_infections_medical_professionals:
+  - text: "General physicians, pulmonologists, government health centers"
+
+  utter_respiratory_infections_medicine_availabilty:
+  - text: "Antibiotics and antiviral medications available in pharmacies and healthcare facilities"
+
+  utter_respiratory_infections_basic_amenities:
+  - text: "Access to clean air, healthcare facilities for diagnosis and treatment"
+
+  utter_respiratory_infections_symptoms:
+  - text: "Severe coughing, sneezing, runny nose, sore throat, headaches, feeling gnerally unwell"
+
+  utter_respiratory_infections_dietary_recommendation:
+  - text: "Stay hydrated with water, herbal teas, and clear broths. Consume antioxidant-rich foods like fruits and vegetables. Increase your intake of vitamin C-rich foods. Include garlic and onions for their antimicrobial properties. Incorporate ginger into your diet for its anti-inflammatory benefits. Consume probiotic-rich foods for gut health and immune support. Include omega-3 fatty acids from sources like fatty fish, flaxseeds, and walnuts. Ensure adequate protein intake from lean sources. Avoid inflammatory foods like processed foods, sugary snacks, and fried foods. Get enough rest and sleep to support the healing process."
+
+  utter_respiratory_infections_treatment_options:
+  - text: "Rest and hydration, Over-the-counter medications for symptom relief, Prescription medications (antivirals, antibiotics) if necessary, Inhalation therapy for congestion, Supportive care (fever reducers, cough remedies)"
+
+  utter_diarrheal_diseases_precautions:
+  - text: "Maintain good hygiene, practice handwashing with soap and clean water, consume safe and properly cooked food, drink clean water"
+
+  utter_diarrheal_diseases_medical_professionals:
+  - text: "General physicians, gastroenterologists, government health centers"
+
+  utter_diarrheal_diseases_medicine_availabilty:
+  - text: "Oral rehydration solutions, antidiarrheal medications, antibiotics available in pharmacies and healthcare facilities"
+
+  utter_diarrheal_diseases_basic_amenities:
+  - text: "Access to clean water, proper sanitation facilities, hygienic food practices"
+
+  utter_diarrheal_diseases_symptoms:
+  - text: "Frequent loose, watery stools, Abdominal cramps, Abdominal pain, Fever, Lightheadedness or dizziness from dehydration"
+
+  utter_diarrheal_diseases_dietary_recommendation:
+  - text: "Hydration: Drink plenty of fluids to prevent dehydration (water, electrolyte solutions). BRAT diet: Eat bland, easy-to-digest foods like bananas, rice, applesauce, and toast. Avoid fatty, spicy, and high-fiber foods. Consume lean proteins like boiled chicken or fish. Include probiotic-rich foods like yogurt to restore gut health"
+
+  utter_diarrheal_diseases_treatment_options:
+  - text: "Rehydration: Drink plenty of fluids to replace lost electrolytes and prevent dehydration. Oral rehydration solutions: Use specially formulated solutions to replenish fluids and electrolytes. Medications: Anti-diarrheal medications may be used in certain cases, but under medical guidance. Probiotics: Take probiotic supplements or consume probiotic-rich foods to restore gut health. Antibiotics: Antibiotics may be prescribed in specific cases if the diarrheal disease is caused by bacterial infection."
+
+  utter_dengue_precautions:
+  - text: "Use mosquito repellents, wear protective clothing, eliminate stagnant water sources, keep living areas clean"
+
+  utter_dengue_medical_professionals:
+  - text: "General physicians, infectious disease specialists, government health centers"
+
+  utter_dengue_medicine_availabilty:
+  - text: "Symptomatic treatment available, specific antiviral medications may be prescribed"
+
+  utter_dengue_basic_amenities:
+  - text: "Access to vector control measures, healthcare facilities for diagnosis and treatment"
+
+  utter_dengue_symptoms:
+  - text: "fever with any of the following: Nausea, vomiting, Rash, Aches and pains (eye pain, typically behind the eyes, muscle, joint, or bone pain)"
+
+  utter_dengue_dietary_recommendation:
+  - text: "Hydration: Drink plenty of fluids to prevent dehydration (water, coconut water, oral rehydration solutions). High-Calorie Foods: Consume energy-dense foods like fruits, vegetables, whole grains, and lean proteins to support recovery. Vitamin C: Include vitamin C-rich foods like citrus fruits, strawberries, and papaya to boost immune function. Avoid Salty and Spicy Foods: These can increase fluid retention and discomfort. Easy-to-Digest Foods: Opt for easily digestible foods like soups, boiled vegetables, and steamed fish or chicken. Small, Frequent Meals: Eat small, frequent meals to aid digestion and prevent nausea. Avoid Alcohol and Caffeine: These can dehydrate the body and worsen symptoms. Rest: Get plenty of rest to aid in recovery and allow the body to heal."
+
+  utter_dengue_treatment_options:
+  - text: "Fluid Replacement: Maintain hydration through oral rehydration solutions or intravenous fluids. Symptom Relief: Use pain relievers (paracetamol) to reduce fever and manage pain (avoid aspirin and non-steroidal anti-inflammatory drugs). Rest: Get plenty of rest to aid in recovery and conserve energy. Medical Monitoring: Regularly monitor vital signs and seek medical attention if symptoms worsen. Hospitalization: In severe cases, hospitalization may be required for close monitoring and intensive care. Supportive Care: Treat symptoms such as nausea, vomiting, and rash with appropriate remedies. Prevention: Avoid mosquito bites and control mosquito breeding areas to prevent further spread of dengue."
+
+  utter_malaria_precautions:
+  - text: "Use mosquito repellents, sleep under mosquito nets, wear protective clothing, eliminate stagnant water sources"
+
+  utter_malaria_medical_professionals:
+  - text: "General physicians, infectious disease specialists, government health centers"
+
+  utter_malaria_medicine_availabilty:
+  - text: "Antimalarial drugs available in pharmacies and government healthcare facilities"
+
+  utter_malaria_basic_amenities:
+  - text: "Access to mosquito control measures, diagnostic facilities, and healthcare centers"
+
+  utter_malaria_symptoms:
+  - text: "Extreme tiredness and fatigue, difficulty breathing, dark or bloody urine, jaundice (yellowing of the eyes and skin)"
+
+  utter_malaria_dietary_recommendation:
+  - text: "Hydration: Drink plenty of fluids to prevent dehydration (water, herbal teas, oral rehydration solutions). Nutrient-Rich Foods: Consume a balanced diet with fruits, vegetables, whole grains, and lean proteins to support recovery. Iron-Rich Foods: Include iron-rich foods like spinach, lean meats, beans, and fortified cereals to replenish iron stores. Vitamin C: Eat foods high in vitamin C, such as citrus fruits, berries, and bell peppers, to support the immune system. Easy-to-Digest Foods: Opt for easily digestible foods like soups, steamed vegetables, and boiled chicken or fish. Small, Frequent Meals: Eat small, frequent meals to aid digestion and maintain energy levels. Rest: Get plenty of rest to aid in recovery and allow the body to heal. Follow Medical Advice: Adhere to prescribed anti-malarial medications and follow the recommendations of healthcare professionals."
+
+  utter_malaria_treatment_options:
+  - text: "Antimalarial Medications: Prescribed medications to target and eliminate the malaria parasite. Combination Therapy: Using multiple antimalarial drugs to prevent drug resistance. Supportive Care: Treating symptoms such as fever, pain, and nausea with appropriate remedies. Hospitalization: In severe cases or complications, hospitalization may be necessary for close monitoring and intravenous treatment. Prevention: Taking measures to prevent mosquito bites and using mosquito nets or insect repellents. Follow-Up: Regular follow-up visits to monitor treatment progress and ensure complete recovery."
+
+  utter_tuberculosis_precautions:
+  - text: "Maintain good hygiene, cover mouth while coughing or sneezing, get vaccinated if available"
+
+  utter_tuberculosis_medical_professionals:
+  - text: "Pulmonologists, general physicians, government TB clinics"
+
+  utter_tuberculosis_medicine_availabilty:
+  - text: "TB medication available through the Revised National Tuberculosis Control Program (RNTCP) at government health centers"
+
+  utter_tuberculosis_basic_amenities:
+  - text: "Access to TB testing, diagnostic facilities, and government healthcare centers"
+
+  utter_tuberculosis_symptoms:
+  - text: "feelings of sickness or weakness, weight loss, fever, and night sweats, The symptoms of TB disease of the lungs also include coughing, chest pain, and the coughing up of blood. Symptoms of TB disease in other parts of the body depend on the area affected."
+
+  utter_tuberculosis_dietary_recommendation:
+  - text: "Balanced Nutrition: Consume a well-balanced diet with a variety of fruits, vegetables, whole grains, lean proteins, and healthy fats. High-Calorie Foods: Include energy-dense foods to support weight gain and provide additional calories (e.g., nuts, nut butter, avocados). Protein-Rich Foods: Consume adequate protein from sources like lean meats, poultry, fish, legumes, and dairy products to support tissue repair and immune function. Vitamin D: Get enough sunlight exposure or consider vitamin D supplements to support immune function. Nutrient Supplements: In some cases, healthcare professionals may recommend vitamin and mineral supplements to address deficiencies or enhance recovery. Small, Frequent Meals: Eat smaller, frequent meals to aid digestion and improve nutrient absorption. Avoid Alcohol and Tobacco: Minimize or avoid alcohol and tobacco products, as they can worsen symptoms and hinder recovery. Adequate Hydration: Drink enough fluids, primarily water, to stay hydrated and support overall health."
+
+  utter_tuberculosis_treatment_options:
+  - text: "Antituberculosis Medications: A combination of antibiotics is prescribed to treat tuberculosis and eliminate the bacteria. Directly Observed Therapy (DOT): Ensuring medication adherence through direct observation by a healthcare professional or designated person. Long Treatment Duration: Completing the full course of antibiotics, typically lasting six to nine months or longer. Supportive Care: Treating symptoms and managing complications as necessary. Isolation: In some cases, isolation may be required to prevent the spread of tuberculosis to others. Regular Follow-Up: Regular visits to monitor treatment progress and ensure complete recovery. Contact Tracing: Identifying and testing individuals who have been in close contact with the infected person to prevent further transmission."
+
+  utter_typhoid_precautions:
+  - text: "Maintain good personal hygiene, drink clean and safe water, practice proper food handling and preparation"
+
+  utter_typhoid_medical_professionals:
+  - text: "General physicians, infectious disease specialists, government health centers"
+
+  utter_typhoid_medicine_availabilty:
+  - text: "Antibiotics commonly prescribed, available in pharmacies"
+
+  utter_typhoid_basic_amenities:
+  - text: "Access to clean water, basic sanitation, and hygiene facilities"
+
+  utter_typhoid_symptoms:
+  - text: "High fever, Abdominal pain, Headache, Fatigue, Loss of appetite, Diarrhea or constipation, Rose-colored spots on the chest, Weakness, Muscle aches, Sore throat"
+
+  utter_typhoid_dietary_recommendation:
+  - text: "Soft, Bland Foods: Consume easily digestible foods like boiled rice, boiled potatoes, cooked vegetables, and soft fruits. Hydration: Drink plenty of fluids, including water, herbal teas, and clear soups, to prevent dehydration. Avoid Spicy and Fried Foods: These can irritate the digestive system and worsen symptoms. Well-Cooked Foods: Ensure that all foods, especially meats and eggs, are thoroughly cooked to prevent further infection. Small, Frequent Meals: Eat smaller, more frequent meals to aid digestion and prevent overloading the digestive system. Probiotic-Rich Foods: Include probiotic-rich foods like yogurt to support gut health and restore beneficial bacteria. Avoid Raw or Unpasteurized Dairy: Opt for pasteurized dairy products to minimize the risk of contamination. Follow Medical Advice: Adhere to prescribed medications and follow the recommendations of healthcare professionals."
+
+  utter_typhoid_treatment_options:
+  - text: "Antibiotics: Prescribed antibiotics, such as fluoroquinolones or cephalosporins, are used to treat the infection and eliminate the Salmonella bacteria. Supportive Care: Rest, hydration, and over-the-counter pain relievers (under medical guidance) to alleviate symptoms and support recovery. Hospitalization: In severe cases or complications, hospitalization may be necessary for intravenous antibiotics and close monitoring. Vaccination: Typhoid vaccines are available to prevent future infections but do not treat an existing infection. Follow-Up: Regular follow-up visits with healthcare professionals to monitor treatment progress and ensure complete recovery. Antibiotics: Prescribed antibiotics, such as fluoroquinolones or cephalosporins, are used to treat the infection and eliminate the Salmonella bacteria. Supportive Care: Rest, hydration, and over-the-counter pain relievers (under medical guidance) to alleviate symptoms and support recovery. Hospitalization: In severe cases or complications, hospitalization may be necessary for intravenous antibiotics and close monitoring. Vaccination: Typhoid vaccines are available to prevent future infections but do not treat an existing infection. Follow-Up: Regular follow-up visits with healthcare professionals to monitor treatment progress and ensure complete recovery."
+  
+  utter_COPD_symptoms:
+  - text: "Persistent cough: A chronic cough that produces mucus is a common symptom of COPD.
+           Shortness of breath: Individuals with COPD may experience breathlessness, especially during physical exertion.
+           Wheezing: The narrowing of airways in COPD can cause a whistling or wheezing sound during breathing.
+           Chest tightness: Many people with COPD experience a feeling of tightness or heaviness in the chest.
+           Reduced exercise tolerance: COPD can lead to decreased stamina and difficulty performing activities that require physical exertion.
+           Fatigue: Feeling tired or lacking energy is a common symptom of COPD, often due to the increased effort required to breathe.
+           Recurrent respiratory infections: COPD makes individuals more susceptible to respiratory infections such as colds, flu, and pneumonia."
+
+  utter_COPD_causes_and_risk_factors:
+  - text: "Smoking: Cigarette smoking is the leading cause of COPD. The harmful chemicals in tobacco smoke damage the lungs over time.
+          Environmental exposure: Long-term exposure to pollutants like air pollution, secondhand smoke, and occupational dust and chemicals can contribute to COPD development.
+          Genetic factors: Genetic predisposition can increase the risk of developing COPD, particularly alpha-1 antitrypsin deficiency, a rare genetic condition.
+          Respiratory infections: Certain respiratory infections, such as repeated lung infections during childhood, can increase the risk of COPD later in life."
+  
+  utter_COPD_treatment_options:
+  - text: "1.Avoid tobacco smoke, maintain good indoor air quality, exercise regularly, take prescribed medications
+          2.Oxygen therapy: Supplemental oxygen may be prescribed for individuals with low blood oxygen levels to improve breathing and relieve symptoms. 
+          It can be administered through portable devices or at home."
+
+  utter_COPD_diet:
+  - text: "Eat a well-balanced diet with a variety of fruits, vegetables, whole grains, and lean proteins.
+           Include foods rich in antioxidants, such as berries, leafy greens, and beans, to reduce inflammation.
+           Consume foods high in omega-3 fatty acids, like fatty fish, flaxseeds, and walnuts, for their anti-inflammatory properties.
+           Opt for smaller, more frequent meals to avoid feeling overly full and putting pressure on the lungs."
+
+  utter_COPD_precautionary_measures:
+  - text: "Quit Smoking: The most crucial step is to quit smoking and avoid exposure to secondhand smoke, as smoking is the leading cause of COPD.
+           Avoid Lung Irritants: Minimize exposure to pollutants, dust, chemicals, and fumes that can irritate the lungs.
+           Practice Good Hygiene: Wash your hands regularly to reduce the risk of respiratory infections that can worsen COPD symptoms."
+
+  utter_COPD_medical_professional:
+  - text: "Pulmonologist: Specializes in the diagnosis and treatment of respiratory conditions, including COPD.
+           General Practitioner (GP)/Family Physician: Can provide initial evaluation, diagnosis, and management of COPD, and may refer patients to a pulmonologist if needed."
+
+  utter_COPD_medicine_available:
+   - text: "Bronchodilators: These medications help relax and open the airways, making breathing easier. Examples include short-acting bronchodilators,
+            Inhaled Corticosteroids: These medications reduce inflammation in the airways and may be prescribed for individuals with frequent COPD exacerbations."
+
+  utter_COPD_amenities:
+  - text: "Clean Air: Individuals with COPD benefit from an environment with clean air to minimize exposure to pollutants and irritants,
+           Oxygen Supply (if required): For individuals with severe COPD, supplemental oxygen may be necessary"
+
+#################################################################################################################
+
+  utter_Jaundice_symptoms:
+  - text: "Yellowing of the skin and eyes (icterus) due to elevated bilirubin levels.
+           Dark urine and pale stools.
+           Fatigue, weakness, and general malaise.
+           Abdominal pain, nausea, and vomiting in some cases.
+           Itchy skin (pruritus) may occur."
+
+  utter_Jaundice_treatment_options:
+  - text: "Treatment focuses on addressing the underlying cause of jaundice.
+          Management may include medications, such as antiviral drugs for viral hepatitis, or antibiotics for bacterial infections.
+          In cases of obstructive jaundice, interventions like surgery or endoscopic procedures may be necessary.
+          Supportive care involves rest, hydration, and monitoring liver function.
+          Severe cases may require hospitalization and close medical supervision."
+
+  utter_dietary_recommendation_for_jaundice:
+  - text: "A well-balanced diet that includes fruits, vegetables, whole grains, and lean proteins is generally recommended.
+          It is essential to limit or avoid alcohol consumption, as it can worsen liver damage.
+          Adequate hydration is crucial, so drinking plenty of water is encouraged.
+          Depending on the severity and underlying cause, a healthcare professional may provide specific dietary guidance tailored to individual needs.
+          It is important to follow medical advice and consult with a healthcare professional regarding dietary restrictions and modifications."
+
+  utter_jaundice_precautionary_measures:
+  - text: "Practice Good Hygiene: Wash hands thoroughly and frequently to prevent the spread of infections that can cause jaundice.
+           Ensure Clean Drinking Water: Drink clean, safe water to reduce the risk of waterborne infections that can lead to jaundice.
+           Practice Safe Food Handling: Follow proper food handling and cooking techniques to prevent foodborne infections that can contribute to jaundice."
+
+  utter_jaundice_medical_professional:
+  - text: "Gastroenterologist: Specializes in diagnosing and treating conditions related to the digestive system, including liver disorders like jaundice.
+           Hepatologist: Focuses specifically on the diagnosis and treatment of liver diseases, including jaundice,
+           Internal Medicine Physician."
+
+  utter_jaundice_medicine_available:
+  - text: "Ursodeoxycholic Acid (UDCA): Used to dissolve certain types of gallstones and improve liver function.
+           Antiviral Medications: Depending on the cause of jaundice (e.g., hepatitis), specific antiviral medications may be prescribed."
+
+  utter_jaundice_amenities:
+  - text: "Rest and Comfort: Adequate rest is important for individuals with jaundice to support their recovery,
+           Clean Water: Access to clean and safe drinking water is crucial for hydration and overall well-being,
+           Nutritious Food"
+##############################################################################################################
+
+  utter_Kidney_stones_symptons:
+  - text: "Severe pain in the back, side, or lower abdomen.
+        Blood in the urine (hematuria).
+        Frequent urination or urgency to urinate.
+        Cloudy or foul-smelling urine.
+        Nausea and vomiting.
+        Discomfort or pain during urination."
+  
+  utter_kidney_stone_treatment_options:
+  - text: "Small stones may pass on their own with increased fluid intake and pain management.
+          Medications can be prescribed to help with pain and promote stone passage.
+          Extracorporeal Shock Wave Lithotripsy (ESWL) uses sound waves to break up larger stones.
+          Ureteroscopy or Percutaneous Nephrolithotomy (PNL) may be performed for larger stones that do not pass naturally.
+          In certain cases, surgical intervention may be required."
+
+  utter_kidney_stone_diet:
+  - text: "Increase fluid intake, especially water, to maintain hydration and promote urine flow.
+           Limit sodium (salt) intake, as high sodium levels can increase the risk of kidney stone formation.
+           Consume foods high in dietary calcium, such as dairy products, tofu, and leafy greens, while maintaining moderation.
+           Reduce the intake of oxalate-rich foods, such as spinach, rhubarb, beets, and chocolate, if you are prone to calcium oxalate stones."
+
+  utter_kidney_stone_precautionary_measures:
+  - text: "Stay Hydrated: Drink an adequate amount of water throughout the day to maintain good urine flow and prevent the formation of kidney stones.
+           Follow a Balanced Diet: Eat a diet rich in fruits, vegetables, and whole grains while limiting sodium, oxalate-rich foods (e.g., spinach, rhubarb), and animal protein to reduce the risk of stone formation.
+           Maintain a Healthy Weight: Aim for a healthy weight and avoid rapid weight loss or gain, as obesity and drastic weight changes can contribute to kidney stone formation."
+
+  utter_kidney_stone_medical_professional:
+  - text: "Urologist: Specializes in the diagnosis and treatment of conditions affecting the urinary tract, including kidney stones.
+           Nephrologist: Focuses on the diagnosis and treatment of kidney-related conditions, including kidney stones."
+
+  utter_kidney_stone_medicine_available:
+  - text: "Pain Medications: Nonsteroidal anti-inflammatory drugs (NSAIDs) or opioids may be prescribed to manage pain associated with kidney stones.
+           Alpha Blockers: These medications help relax the muscles in the ureter, facilitating the passage of kidney stones.
+           Diuretics: Certain diuretic medications may be used to increase urine production and promote the elimination of kidney stones."
+
+  utter_kidney_stone_amenities:
+  - text: "Hydration,Adequate Bathroom Facilities,Comfortable Seating: Individuals with kidney stones may experience discomfort or pain."
+###############################################################################################################          
+
+  utter_depression_symptoms:
+  - text: "Persistent feelings of sadness, hopelessness, or emptiness.
+          Loss of interest or pleasure in activities once enjoyed.
+          Fatigue, changes in appetite, sleep disturbances, or difficulty concentrating."
+
+  utter_depression_precautionary_meaures:
+  - text: "Maintain a healthy lifestyle, seek social support, engage in regular physical activity, 
+                consider therapy or counseling, take prescribed medications"
+
+  utter_depression_medical_professionals:
+  - text: "Psychiatrists, psychologists, government health centers"
+
+  utter_depression_medicine_availability:
+  - text: "Antidepressant medications, counseling services, 
+        and therapy available in pharmacies and healthcare facilities"
+
+  utter_depression_basic_amenities:
+  - text: "Access to mental health services, support groups, and a supportive social environment"
+
+  utter_depression_diet:
+  - text: "Include foods rich in omega-3 fatty acids, such as fatty fish (salmon, mackerel), walnuts, and flaxseeds.
+           Consume foods high in antioxidants, such as fruits, vegetables, and whole grains.
+           Limit the intake of processed foods, sugary snacks, and beverages.
+           Incorporate foods rich in vitamin D, such as fortified dairy products and eggs."
+
+  utter_depression_treatment_option:
+  - text: "Psychotherapy: Cognitive-behavioral therapy (CBT), interpersonal therapy (IPT), or other forms of psychotherapy can be effective in managing depression.
+           Medications: Antidepressant medications, such as selective serotonin reuptake inhibitors (SSRIs) or serotonin-norepinephrine reuptake inhibitors (SNRIs), may be prescribed by a healthcare professional.
+           Lifestyle Changes: Engaging in regular physical activity, practicing stress-reduction techniques (e.g., meditation, yoga), maintaining a healthy sleep schedule, and seeking social support can help manage symptoms of depression"
+
+
+  ###########################################################################################################
+  
+  utter_Skin_infections_symptoms:
+  - text: "Redness, swelling, and tenderness in the affected area.
+           Presence of pus or discharge.
+           Itching, pain, or warmth in the affected area."
+
+  utter_Skin_infections_precautionary_meaures:
+  - text: "Practice good personal hygiene, keep the skin clean and dry, 
+          avoid sharing personal items, seek prompt treatment for infections"
+
+  utter_Skin_infections_medical_professionals:
+  - text: "Dermatologists, general physicians, government health centers"
+
+  utter_Skin_infections_medicine_availability:
+  - text: "Topical creams, antibiotics, antifungal medications available in pharmacies and healthcare facilities"
+
+  utter_Skin_infections_basic_amenities:
+  - text: "Access to clean water, basic sanitation, and hygiene facilities, 
+           healthcare facilities for diagnosis and treatment"
+
+  utter_Skin_infection_diet:
+  - text: "Focus on consuming a balanced diet with plenty of fruits, vegetables, and whole grains.
+           Include foods high in vitamin C, like citrus fruits, strawberries, and kiwi, to support skin health and wound healing.
+           Consume foods rich in zinc, such as oysters, lean meats, legumes, and nuts, which aid in skin regeneration.
+           Limit processed foods, sugary snacks, and beverages, as they may worsen inflammation."
+
+  utter_Skin_infection_treatment_option:
+  - text: "Topical Antibiotics/Antifungals: Depending on the type of skin infection (bacterial or fungal), topical creams or ointments containing antibiotics or antifungal agents may be prescribed.
+           Oral Medications: In more severe cases, oral antibiotics or antifungal medications may be necessary.
+           Wound Care: Proper wound care, such as keeping the affected area clean, dry, and covered, can promote healing.
+           Symptom Management: Over-the-counter creams or ointments, such as hydrocortisone for itching or pain relief, can be used under medical guidance."
+ ############################################################################################################          
+
+  utter_Eye_infections_symptoms: 
+  - text: "Redness, itching, or irritation in the eye.
+           Excessive tearing or watery discharge.
+           Sensitivity to light, blurred vision, or the feeling of having something in the eye"
+
+  utter_Eye_infections_precautionary_meaures:
+  - text: "Practice good hygiene, avoid touching the eyes with dirty hands, 
+        avoid sharing personal items, seek prompt treatment for infections"
+
+  utter_Eye_infections_medical_professionals:
+  - text: "Ophthalmologists, general physicians, government health centers"
+
+  utter_Eye_infections_medicine_availability:
+  - text: "Topical antibiotics, antiviral medications, 
+  and other eye infection treatments available in pharmacies and healthcare facilities"
+
+  utter_Eye_infections_basic_amenities:
+  - text: "Access to clean water, basic sanitation, and hygiene facilities, 
+           healthcare facilities for diagnosis and treatment"
+
+  utter_Eye_infection_diet:
+  - text: "Consume foods rich in vitamin A, such as carrots, spinach, sweet potatoes, and bell peppers.
+           Include foods high in vitamin C, like citrus fruits, berries, and leafy greens.
+           Incorporate foods with omega-3 fatty acids, such as salmon, tuna, and chia seeds.
+           Drink plenty of water to maintain hydration and support overall eye health."
+
+  utter_Eye_infection_treatment_option:
+  - text: "Antibiotic Eye Drops/Ointments: Bacterial eye infections are commonly treated with prescription antibiotic eye drops or ointments.
+           Antiviral Medications: Viral eye infections, such as conjunctivitis (pink eye) caused by a viral infection, may require antiviral medications.
+           Lubricating Eye Drops: Lubricating eye drops can help alleviate dryness and discomfort associated with eye infections.
+           Warm Compresses and Eyelid Hygiene: For certain types of eye infections, warm compresses and proper eyelid hygiene can aid in symptom relief and healing."
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

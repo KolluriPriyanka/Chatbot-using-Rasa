@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot</title>
+    <link rel="stylesheet" href="/staticFiles/style.css">
+    <!-- <script src="chatbot.js"></script> -->
+</head>
+<head>
+  <title>Text alignment</title>
+  <style>
+      p{text-align: left;}
+  </style>
+</head>
+
+<body>
+    <div class="chatbot-container">
+        <div id="header">
+            <h1>Health Care Chatbot</h1>
+            <h3>by Avengers</h3>
+        </div>
+        <div id="chatbot">
+            <div id="conversation">
+              <div class="chatbot-message">
+                <p class="chatbot-text">Enter your Query related to<br>1. Respiratory Infections<br>2. Diarrheal Diseases<br>3. Dengue<br>4. Malaria<br>5. Tuberculosis<br>6. Typhoid<br>7. Chronic Diseases<br>8. Jaundice<br>9. Kidney Stones<br>10. Depression<br>11. Skin Infections<br>12. Eye Infections
+                </p><br>
+
+              </div>
+              <div class="chatbot-message">
+                <p>{{result}}</p>
+              </div>
+              
+            </div>
+            <!-- <form id="input-form"> -->
+            <form action="{{ url_for('extract') }}" method="post">
+              <message-container>
+                <input type="text" placeholder="Type your message here" name="text" style="width: 450px;">
+                <button id="submit-button" type="submit" style="background-color: rgb(75, 118, 127);" style="width: 20px; height: 20px;">
+                Ask
+                </button>
+              </message-container>
+            
+            </form>
+        </div>  
+
+    </div>
+
+</body>
+</html>

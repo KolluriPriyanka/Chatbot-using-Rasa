@@ -1,0 +1,458 @@
+version: "3.1"
+
+rules:
+
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: greet anytime the user greets
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+- rule: Say thanks
+  steps:
+  - intent: thanks
+  - action: utter_thanks
+
+- rule: Say 'I am a bot' anytime the user challenges
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+
+- rule: Say precautions for respiratory infections
+  steps:
+  - intent: respiratory_infections_precautions
+  - action: utter_respiratory_infections_precautions
+
+- rule: Say medical professionals for respiratory infections
+  steps:
+  - intent: respiratory_infections_medical_professionals
+  - action: utter_respiratory_infections_medical_professionals
+
+- rule: Say medicine available for respiratory infections
+  steps:
+  - intent: respiratory_infections_medicine_availabilty
+  - action: utter_respiratory_infections_medicine_availabilty
+
+- rule: Say basic amenities for respiratory infections
+  steps:
+  - intent: respiratory_infections_basic_amenities
+  - action: utter_respiratory_infections_basic_amenities
+
+- rule: Say symptoms for respiratory infections
+  steps:
+  - intent: respiratory_infections_symptoms
+  - action: utter_respiratory_infections_symptoms
+
+- rule: Say diet for respiratory infections
+  steps:
+  - intent: respiratory_infections_dietary_recommendation
+  - action: utter_respiratory_infections_dietary_recommendation
+
+- rule: Say treatment options for respiratory infections
+  steps:
+  - intent: respiratory_infections_treatment_options
+  - action: utter_respiratory_infections_treatment_options
+
+- rule: Say precautions for diarrheal diseases
+  steps:
+  - intent: diarrheal_diseases_precautions
+  - action: utter_diarrheal_diseases_precautions
+
+- rule: Say medical professionals for diarrheal diseases
+  steps:
+  - intent: diarrheal_diseases_medical_professionals
+  - action: utter_diarrheal_diseases_medical_professionals
+
+- rule: Say medicine available for diarrheal diseases
+  steps:
+  - intent: diarrheal_diseases_medicine_availabilty
+  - action: utter_diarrheal_diseases_medicine_availabilty
+
+- rule: Say basic amenities for diarrheal diseases
+  steps:
+  - intent: diarrheal_diseases_basic_amenities
+  - action: utter_diarrheal_diseases_basic_amenities
+
+- rule: Say symptoms for diarrheal diseases
+  steps:
+  - intent: diarrheal_diseases_symptoms
+  - action: utter_diarrheal_diseases_symptoms
+
+- rule: Say diet for diarrheal diseases
+  steps:
+  - intent: diarrheal_diseases_dietary_recommendation
+  - action: utter_diarrheal_diseases_dietary_recommendation
+
+- rule: Say treatment options for diarrheal diseases
+  steps:
+  - intent: diarrheal_diseases_treatment_options
+  - action: utter_diarrheal_diseases_treatment_options
+
+- rule: Say precautions for dengue
+  steps:
+  - intent: dengue_precautions
+  - action: utter_dengue_precautions
+
+- rule: Say medical professionals for dengue
+  steps:
+  - intent: dengue_medical_professionals
+  - action: utter_dengue_medical_professionals
+
+- rule: Say medicine available for dengue
+  steps:
+  - intent: dengue_medicine_availabilty
+  - action: utter_dengue_medicine_availabilty
+
+- rule: Say basic amenities for dengue
+  steps:
+  - intent: dengue_basic_amenities
+  - action: utter_dengue_basic_amenities
+
+- rule: Say symptoms for dengue
+  steps:
+  - intent: dengue_symptoms
+  - action: utter_dengue_symptoms
+
+- rule: Say diet for dengue
+  steps:
+  - intent: dengue_dietary_recommendation
+  - action: utter_dengue_dietary_recommendation
+
+- rule: Say treatment options for dengue
+  steps:
+  - intent: dengue_treatment_options
+  - action: utter_dengue_treatment_options
+
+- rule: Say precautions for malaria
+  steps:
+  - intent: malaria_precautions
+  - action: utter_malaria_precautions
+
+- rule: Say medical professionals for malaria
+  steps:
+  - intent: malaria_medical_professionals
+  - action: utter_malaria_medical_professionals
+
+- rule: Say medicine available for malaria
+  steps:
+  - intent: malaria_medicine_availabilty
+  - action: utter_malaria_medicine_availabilty
+
+- rule: Say basic amenities for malaria
+  steps:
+  - intent: malaria_basic_amenities
+  - action: utter_malaria_basic_amenities
+
+- rule: Say symptoms for malaria
+  steps:
+  - intent: malaria_symptoms
+  - action: utter_malaria_symptoms
+
+- rule: Say diet for malaria
+  steps:
+  - intent: malaria_dietary_recommendation
+  - action: utter_malaria_dietary_recommendation
+
+- rule: Say treatment options for malaria
+  steps:
+  - intent: malaria_treatment_options
+  - action: utter_malaria_treatment_options
+
+- rule: Say precautions for tuberculosis
+  steps:
+  - intent: tuberculosis_precautions
+  - action: utter_tuberculosis_precautions
+
+- rule: Say medical professionals for tuberculosis
+  steps:
+  - intent: tuberculosis_medical_professionals
+  - action: utter_tuberculosis_medical_professionals
+
+- rule: Say medicine available for tuberculosis
+  steps:
+  - intent: tuberculosis_medicine_availabilty
+  - action: utter_tuberculosis_medicine_availabilty
+
+- rule: Say basic amenities for tuberculosis
+  steps:
+  - intent: tuberculosis_basic_amenities
+  - action: utter_tuberculosis_basic_amenities
+
+- rule: Say symptoms for tuberculosis
+  steps:
+  - intent: tuberculosis_symptoms
+  - action: utter_tuberculosis_symptoms
+
+- rule: Say diet for tuberculosis
+  steps:
+  - intent: tuberculosis_dietary_recommendation
+  - action: utter_tuberculosis_dietary_recommendation
+
+- rule: Say treatment options for tuberculosis
+  steps:
+  - intent: tuberculosis_treatment_options
+  - action: utter_tuberculosis_treatment_options
+
+- rule: Say precautions for typhoid
+  steps:
+  - intent: typhoid_precautions
+  - action: utter_typhoid_precautions
+
+- rule: Say medical professionals for typhoid
+  steps:
+  - intent: typhoid_medical_professionals
+  - action: utter_typhoid_medical_professionals
+
+- rule: Say medicine available for typhoid
+  steps:
+  - intent: typhoid_medicine_availabilty
+  - action: utter_typhoid_medicine_availabilty
+
+- rule: Say basic amenities for typhoid
+  steps:
+  - intent: typhoid_basic_amenities
+  - action: utter_typhoid_basic_amenities
+
+- rule: Say symptoms for typhoid
+  steps:
+  - intent: typhoid_symptoms
+  - action: utter_typhoid_symptoms
+
+- rule: Say diet for typhoid
+  steps:
+  - intent: typhoid_dietary_recommendation
+  - action: utter_typhoid_dietary_recommendation
+
+- rule: Say treatment options for typhoid
+  steps:
+  - intent: typhoid_treatment_options
+  - action: utter_typhoid_treatment_options
+########################################################################################################
+
+- rule: Say COPD symptoms
+  steps: 
+  - intent: COPD_symptoms
+  - action: utter_COPD_symptoms
+
+- rule: Say COPD causes and risk factors
+  steps: 
+  - intent: COPD_causes_and_risk_factors
+  - action: utter_COPD_causes_and_risk_factors
+
+- rule: Say COPD treatment options
+  steps: 
+  - intent: COPD_treatment_options
+  - action: utter_COPD_treatment_options
+
+- rule: Say COPD diet
+  steps:
+  - intent: COPD_diet
+  - action: utter_COPD_diet
+
+- rule: Say COPD precautionary measures
+  steps: 
+  - intent: COPD_precautionary_measures
+  - action: utter_COPD_precautionary_measures
+
+- rule: Say COPD medical professionals
+  steps: 
+  - intent: COPD_medical_professional
+  - action: utter_COPD_medical_professional
+
+- rule: Say COPD medicine available
+  steps: 
+  - intent: COPD_medicine_available
+  - action: utter_COPD_medicine_available
+
+- rule: Say COPD amenities
+  steps: 
+  - intent: COPD_amenities
+  - action: utter_COPD_amenities
+
+#####################################################################################################################################
+
+- rule: Say Jaundice_symptoms
+  steps: 
+  - intent: Jaundice_symptoms
+  - action: utter_Jaundice_symptoms
+
+- rule: Say Jaundice_treatment_options
+  steps: 
+  - intent: Jaundice_treatment_options
+  - action: utter_Jaundice_treatment_options
+
+- rule: Say dietary_recommendation_for_jaundice
+  steps: 
+  - intent: dietary_recommendation_for_jaundice
+  - action: utter_dietary_recommendation_for_jaundice
+
+- rule: Say jaundice_precautionary_measures
+  steps: 
+  - intent: jaundice_precautionary_measures
+  - action: utter_jaundice_precautionary_measures
+
+- rule: Say jaundice_medical_professional
+  steps: 
+  - intent: jaundice_medical_professional
+  - action: utter_jaundice_medical_professional
+
+- rule: Say jaundice_medicine_available
+  steps: 
+  - intent: jaundice_medicine_available
+  - action: utter_jaundice_medicine_available
+
+- rule: Say jaundice_amenities
+  steps: 
+  - intent: jaundice_amenities
+  - action: utter_jaundice_amenities
+
+#########################################################################################################
+
+- rule: Say Kidney_stones_symptons
+  steps: 
+  - intent: Kidney_stones_symptons
+  - action: utter_Kidney_stones_symptons
+
+- rule: Say kidney_stone_treatment_options
+  steps: 
+  - intent: kidney_stone_treatment_options
+  - action: utter_kidney_stone_treatment_options
+
+- rule: Say kidney_stone_diet
+  steps: 
+  - intent: kidney_stone_diet
+  - action: utter_kidney_stone_diet
+
+- rule: Say kidney_stone_precautionary_measures
+  steps: 
+  - intent: kidney_stone_precautionary_measures
+  - action: utter_kidney_stone_precautionary_measures
+
+- rule: Say kidney_stone_medical_professional
+  steps: 
+  - intent: kidney_stone_medical_professional
+  - action: utter_kidney_stone_medical_professional
+
+
+- rule: Say kidney_stone_medicine_available
+  steps: 
+  - intent: kidney_stone_medicine_available
+  - action: utter_kidney_stone_medicine_available
+
+- rule: Say kidney_stone_amenities
+  steps: 
+  - intent: kidney_stone_amenities
+  - action: utter_kidney_stone_amenities
+
+#####################################################################################################################
+
+- rule: Say depression_symptoms
+  steps: 
+  - intent: depression_symptoms
+  - action: utter_depression_symptoms
+
+- rule: Say depression_precautionary_meaures
+  steps: 
+  - intent: depression_precautionary_meaures
+  - action: utter_depression_precautionary_meaures
+
+- rule: Say depression_medical_professionals
+  steps: 
+  - intent: depression_medical_professionals
+  - action: utter_depression_medical_professionals
+
+- rule: Say depression_medicine_availability
+  steps: 
+  - intent: depression_medicine_availability
+  - action: utter_depression_medicine_availability
+
+- rule: Say depression_basic_amenities
+  steps: 
+  - intent: depression_basic_amenities
+  - action: utter_depression_basic_amenities
+
+
+- rule: Say depression_diet
+  steps: 
+  - intent: depression_diet
+  - action: utter_depression_diet
+
+- rule: Say depression_treatment_option
+  steps: 
+  - intent: depression_treatment_option
+  - action: utter_depression_treatment_option
+
+###############################################################################################################################################
+
+- rule: Say Skin_infections_symptoms
+  steps: 
+  - intent: Skin_infections_symptoms
+  - action: utter_Skin_infections_symptoms
+
+- rule: Say Skin_infections_precautionary_meaures
+  steps: 
+  - intent: Skin_infections_precautionary_meaures
+  - action: utter_Skin_infections_precautionary_meaures
+
+- rule: Say Skin_infections_medical_professionals
+  steps: 
+  - intent: Skin_infections_medical_professionals
+  - action: utter_Skin_infections_medical_professionals
+
+- rule: Say Skin_infections_medicine_availability
+  steps: 
+  - intent: Skin_infections_medicine_availability
+  - action: utter_Skin_infections_medicine_availability
+
+- rule: Say Skin_infections_basic_amenities
+  steps: 
+  - intent: Skin_infections_basic_amenities
+  - action: utter_Skin_infections_basic_amenities
+
+- rule: Say Skin_infection_diet
+  steps: 
+  - intent: Skin_infection_diet
+  - action: utter_Skin_infection_diet
+
+- rule: Say Skin_infection_treatment_option
+  steps: 
+  - intent: Skin_infection_treatment_option
+  - action: utter_Skin_infection_treatment_option
+
+##########################################################################################################################
+
+- rule: Say Eye_infections_symptoms
+  steps: 
+  - intent: Eye_infections_symptoms
+  - action: utter_Eye_infections_symptoms
+
+- rule: Say Eye_infections_precautionary_meaures
+  steps: 
+  - intent: Eye_infections_precautionary_meaures
+  - action: utter_Eye_infections_precautionary_meaures
+
+- rule: Say Eye_infections_medicine_availability
+  steps: 
+  - intent: Eye_infections_medicine_availability
+  - action: utter_Eye_infections_medicine_availability
+
+- rule: Say Eye_infections_basic_amenities
+  steps: 
+  - intent: Eye_infections_basic_amenities
+  - action: utter_Eye_infections_basic_amenities
+
+- rule: Say Eye_infection_diet
+  steps: 
+  - intent: Eye_infection_diet
+  - action: utter_Eye_infection_diet
+
+- rule: Say Eye_infection_treatment_option
+  steps: 
+  - intent: Eye_infection_treatment_option
+  - action: utter_Eye_infection_treatment_option
+
+  #######################################################################################################################################
